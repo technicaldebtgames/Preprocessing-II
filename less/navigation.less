@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+.navigation {
+
+    .flexProperties(column, space-between, center, center);
+    border-bottom: 2px dashed @navigation-border;
+
+    .navcontainer {
+
+        max-width: 800px;
+        width: 100%;
+        padding-top: 20px;
+        align-self: center;
+        .flexProperties(row, space-between, center, center);
+
+        nav {
+
+            padding-top: 20px;
+            padding-bottom: 30px;
+            .flexProperties(row, flex-end, center, center);
+    
+            a {
+    
+                text-decoration: none;
+                color: @font-color;
+                font-size: 1.6rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+    
+            }
+    
+        }
+
+    }
+
+
+
+}
