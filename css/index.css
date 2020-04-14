@@ -260,6 +260,16 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  border-style: solid;
+  border-radius: 1.5rem;
+}
 header {
   display: flex;
   flex-direction: column;
