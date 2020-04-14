@@ -13,11 +13,25 @@
         align-self: center;
         .flexProperties(row, space-between, center, center);
 
+        @media @mobile {
+
+        .flexProperties(column, space-between, center, center);
+        max-width: 500px;
+        width: 85%;
+
+        }
+
         nav {
 
             padding-top: 20px;
             padding-bottom: 30px;
             .flexProperties(row, flex-end, center, center);
+
+            @media @mobile {
+
+                padding-bottom: 15px;
+
+            }
     
             a {
     
