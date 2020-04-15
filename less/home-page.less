@@ -6,16 +6,40 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+
+      margin: 0 auto;
+      max-width: 500px;
+      width: 85%;
+      flex-direction: column;
+      align-items: center; // Why does this not work?
+      margin-top: 30px;
+  
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+
+        width: 100%;
+        padding-right: 0%;
+
+      }
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+
+        width: 100%;
+        padding-left: 0%;
+
+      }
 
       img {
         border-radius: 10px;
@@ -27,14 +51,36 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+
+      flex-direction: column-reverse;
+
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+
+        padding-left: 0%;
+        width: 100%;
+
+      }
+
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+
+        padding-right: 0%;
+        width: 100%;
+
+      }
+
     }
   }
 
@@ -45,6 +91,13 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+
+      margin-top: 30px;
+
+    }
+
   }
 
   .content-pick {
@@ -53,9 +106,67 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+
+        width: 70%;
+
+      }
+
+      .btn {
+
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        .buttons(); // Ended up giving default values to this, but it is parametric as well.
+
+      }
+
     }
   }
+
+
 }// home
+
+header {
+
+  .flexProperties(column, space-between, left, center);  
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  border-bottom: 2px dashed @navigation-border;
+
+  @media @mobile {
+
+    max-width: 500px;
+    width: 85%;
+
+  }
+
+  img {
+
+    padding-bottom: 10px;
+
+  }
+
+  h2 {
+
+    padding-top: 10px;
+
+  }
+
+}
